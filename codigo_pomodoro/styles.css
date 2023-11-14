@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+.corFundoFoco{
+    background-color: #5DC3DA;
+        
+}
+
+.corTextoFoco{
+    color:#ECD287
+}
+
+.corTextoLonga{
+    color:#ECD287
+}
+
+.corFundoCurta{
+    background-color: #ECD287;
+}
+
+.corTextoCurta{
+    color: #5DC3DA;
+}
+
+.corFundoLonga{
+    background-color: #8FCAA9;
+}
+
+.corTextoLonga{
+    color: #ECD287;
+}
+
+h1{
+    /* color: #ECD287; */
+    padding: 4%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.botaoTempo{
+    background-color: #262626;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 5%;
+    border: none;
+    align-items: center;
+    height: 70px;
+    width: 80%;
+}
+
+.botaoTempo:hover{
+    /* background-color: #ECD287; */
+    color: #262626;
+    cursor: pointer;
+    scale: 115%;
+}
+
+[definicao="corTempoFoco"]:hover{
+    background-color: #ECD287;
+}
+
+[definicao="corTempoCurta"]:hover{
+    background-color: #5DC3DA;
+}
+
+[definicao="corTempoLonga"]:hover{
+    background-color: #ECD287;
+}
+
+.botaoTempo:active{
+    scale: 98%;
+    box-shadow: 5px 5px #EEEADF;
+}
+
+
+.botaoPlay{
+    border-radius: 5px;
+    padding: 22px;
+    margin: 3%; 
+    height: 80px;   
+    width: 80px;
+    border: none;
+}
+
+.corBotaoFoco{
+    background-color: #ECD287;
+}
+
+.corBotaoLonga{
+    background-color: #ECD287;
+}
+
+.corBotaoCurta{
+    background-color: #5DC3DA;
+}
+
+.botaoPlay:hover{
+    cursor: pointer;
+}
+
+.botaoPlay:active{
+    scale: 90%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 40%;
+    
+
+}
+
+.botoesTempo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.botoesPlay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.principal{
+    width: 45%;
+    margin: 3%;
+}
+
+.tempo{
+    z-index: 2;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 170px;
+    font-size: 2.5em;
+}
+
+@media (max-width: 700px){
+
+    .principal{
+        width: 90%;
+    }
+    
+    .botoesTempo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 5%;
+    }
+
+    .botaoTempo{
+        font-size: 1em;
+        margin: 2%;
+        height: 40px;
+        width: 120px;
+    }
+
+    .botaoPlay{
+        padding: 12px;
+        margin: 8px; 
+        height: 40px;   
+        width: 40px;
+    }
+
+    .tempo{
+
+        margin-top: 170px;
+        margin-left: 120px;
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media (max-width: 400px){
+
+    .principal{
+        width: 90%;
+    }
+    
+    .botoesTempo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 5%;
+    }
+
+    .botaoTempo{
+        font-size: 0.9em;
+        margin: 2%;
+        height: 40px;
+        width: 95px;
+    }
+
+    .botaoPlay{
+        padding: 12px;
+        margin: 8px; 
+        height: 40px;   
+        width: 40px;
+    }
+
+    .tempo{
+
+        margin-top: 140px;
+        margin-left: 90px;
+        font-size: 1.5em;
+    }
+
+}

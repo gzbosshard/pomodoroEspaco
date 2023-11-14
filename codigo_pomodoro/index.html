@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&display=swap" rel="stylesheet">
+
+    <title>Pomodoro</title>
+</head>
+
+
+<body class="corFundoFoco">
+    <div class="lateral">
+        <div class="titulo">
+            <h1 class="corTextoFoco">POMODORO</h1>
+        </div>
+        <div class="botoesTempo">
+            <button class="botaoTempo foco" definicao="corTempoFoco">Foco</button>
+            <button class="botaoTempo curta" definicao="corTempoFoco">Pausa Curta</button>
+            <button class="botaoTempo longa" definicao="corTempoFoco">Pausa Longa</button>
+
+        </div>
+        <div class="botoesPlay">
+            <button class="botaoPlay corBotaoFoco" id="play"><img src="assets/SVG/play.svg" alt=""/></button>
+            <button class="botaoPlay corBotaoFoco" id="pause"><img src="assets/SVG/pause.svg" alt=""/></button>
+            <button class="botaoPlay corBotaoFoco" id="stop"><img src="assets/SVG/stop.svg" alt=""/></button>
+            
+
+        </div>
+    </div>
+    <div class="principal">
+        <div class="tempo">
+            <h1 id="tempoCronometro" class="corTextoFoco">25:00</h1>
+        </div>
+        <div class="animacao">
+        <div id="lottie"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    
+    var params = {
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'data.json'
+    };
+
+    var anim;
+
+    anim = lottie.loadAnimation(params);
+
+</script>
+</div>
+    </div>
+</body>
+</html>
